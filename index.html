@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Neon Snake Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧬 NEON SNAKE</h1>
+    <div class="controls">
+      <span>Score: <span id="score">0</span></span>
+      <button id="toggleButton" class="btn">▶ Start</button>
+    </div>
+    <canvas id="gameCanvas" width="600" height="450"></canvas>
+    <p class="note">Use arrow keys. Avoid walls. Get faster!</p>
+    <p id="gameOverMsg" class="note" style="display: none;">💀 Game Over</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

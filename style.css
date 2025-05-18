@@ -1,0 +1,73 @@
+:root {
+  --bg-color: #0f0f1b;
+  --text-color: #00ffe1;
+  --border-glow: #ff00ff;
+  --btn-bg: #1a1a2e;
+  --btn-text: #00ffe1;
+  --btn-hover: #4e00ff;
+  --canvas-bg: #111122;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0f1b 0%, #1a1a2e 100%);
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-shadow: 0 0 10px #00ffe1, 0 0 20px #4e00ff;
+}
+
+.controls {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 2px solid var(--btn-text);
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  box-shadow: 0 0 20px #4e00ff;
+}
+
+canvas {
+  background-color: var(--canvas-bg);
+  border: 5px solid var(--border-glow);
+  box-shadow: 0 0 30px #ff00ff;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+}
